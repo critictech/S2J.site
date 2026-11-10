@@ -462,7 +462,54 @@
   </div>
 </div>
     </section>
+<!-- Doctor Profile -->
+<div class="mt-10 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+  <div class="grid md:grid-cols-12 items-stretch">
 
+    <!-- Image Side -->
+    <div class="md:col-span-5 bg-[var(--s2j-blue)]">
+      <img
+        src="photo.jpeg"
+        alt="Bone and Joint Surgery - Dr. V.S. Gowtham"
+        class="h-full w-full object-contain"
+      />
+    </div>
+
+    <!-- Details Side -->
+    <div class="md:col-span-7 p-7 md:p-9">
+      <p class="text-xs uppercase tracking-[0.32em] text-[var(--s2j-blue)]">Our Specialist</p>
+      <h3 class="mt-2 text-2xl font-semibold tracking-tight">Dr. V.S. Gowtham, MBBS, MS Ortho</h3>
+      <p class="mt-1 text-sm font-semibold text-slate-700">Consultant Orthopaedic &amp; Spine Surgeon</p>
+
+      <p class="mt-4 text-sm text-slate-600 leading-relaxed">
+        Special interest in trauma, joint replacement, sports injury, arthroscopy (knee keyhole surgery), and minimally invasive spine surgery.
+      </p>
+
+      <div class="mt-5">
+        <p class="text-sm font-semibold">Consultation locations</p>
+        <ul class="mt-3 grid gap-2 sm:grid-cols-2 text-sm text-slate-600">
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Doctor Corner, Triplicane</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Crescent Hospital, Triplicane</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Shakthi Hospital, Triplicane</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>VS Hospital, Kilpauk</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Good Life, Nungambakkam</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Apollo OMR</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Apollo Kilpauk</li>
+          <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--s2j-blue)]"></span>Apollo First Med, Kilpauk</li>
+        </ul>
+      </div>
+
+      <div class="mt-5 rounded-2xl bg-slate-50 p-5">
+        <p class="text-sm font-semibold">Online and offline home visits available</p>
+        <div class="mt-3 flex flex-wrap items-center gap-3">
+          <a href="tel:9176395265" class="rounded-full bg-[var(--s2j-red)] px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 transition">Call 91763 95265</a>
+          <a href="tel:9840596418" class="rounded-full bg-[var(--s2j-red)] px-4 py-2 text-sm font-semibold text-white hover:bg-red-700 transition">Call 98405 96418</a>
+          <button id="whatsBtnDoctor" class="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-[var(--s2j-blue)] hover:bg-slate-50 transition">WhatsApp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Procedures / Conditions (Unique details + tabs) -->
     <section id="procedures" class="bg-white/70 border-y border-slate-200/70">
       <div class="mx-auto max-w-6xl px-6 py-20">
@@ -1203,6 +1250,7 @@
     $('#whatsBtnCoord')?.addEventListener('click', () => openWhatsApp('Hello Jamuna ma’am, I need guidance regarding orthopedic consultation / surgery coordination. My phone: '));
     $('#whatsBtnContact')?.addEventListener('click', () => openWhatsApp('Hello S2J Ortho Health, I want to book an appointment / request home care. My phone: '));
     $('#whatsBtnFooter')?.addEventListener('click', () => openWhatsApp(defaultWhatsMsg));
+    $('#whatsBtnDoctor')?.addEventListener('click', () => openWhatsApp('Hello Dr. Gowtham, I would like to book a consultation. My phone: '));
     $('#floatWhats')?.addEventListener('click', () => openWhatsApp(defaultWhatsMsg));
 
     // --- Contact form: send via WhatsApp ---
